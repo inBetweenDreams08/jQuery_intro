@@ -68,22 +68,15 @@ function submitForm() {
 }
 
 
-
-
-
-
-
-
-
 //this would be event 3 
 function buttonClicked(){
     console.log("I'm Clicked");
 
     let ulFoods = $('#favoriteFoods');  // the let ulFoods isn't nec. you can just have the $() on the next line.
    
-    ulFoods.empty();  //clear out UL to append a fresh list
+    ulFoods.empty();  //clear out ulFoods to append a fresh list
 
-    for (let i = 0 ; i < favFoods.length; i++){
+    for (let i = 0 ; i < favFoods.length; i++){ 
         ulFoods.append(
             `<li> one of my favorite foods is: ${favFoods[i]}!
                  <button class= "deleteBtn"> DELETE </button> 
